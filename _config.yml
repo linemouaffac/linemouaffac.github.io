@@ -1,0 +1,70 @@
+# Site
+repository: sproogen/resume-theme
+favicon: images/favicon.ico
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: Line Mouaffac
+title: Ph.D. student at Sorbonne Université
+email: line.mouaffac@sorbonne-universite.fr
+
+# Dark Mode (true/false/never)
+darkmode: false
+
+# Social links
+github_username: linemouaffac
+linkedin_username: line-mouaffac-6b7a7382
+# orcid_username: 0000-0000-0000-0000
+additional_links:
+  - title: Scholar
+    icon: fas fa-graduation-cap
+    url: https://scholar.google.com/citations?user=tnJHQcwAAAAJ&hl=en&oi=ao
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me
+about_profile_image: images/profile_picture.png
+about_content: |
+  I am a physics PhD student at the [Institute of Mineralogy, Physics of Materials, and Cosmochemistry (IMPMC)](https://impmc.sorbonne-universite.fr/fr/index.html) at Sorbonne University since 2022, under the supervision of [Fabio Pietrucci](https://scholar.google.com/citations?user=0fu5X-cAAAAJ&hl=en&oi=ao).
+
+  My main area of research lies at the interface of computational chemistry, statistical physics, and machine learning. In particular, I am interested in finding optimal reaction coordinates (RC) to model rare events. The rare events at stake are physico-chemical transformations such as nucleation, dissociation of complexes in water, and protein-protein interactions. My goal is to retrieve free energy surfaces (FES) and kinetic rates from molecular dynamics trajectories. The accuracy of the model depends on the judicious choice of the reaction coordinates. Building upon a recent variational theorem, I developped a method that systematically minimizes the kinetic rate to obtain optimal RCs. This method serves as a viable replacement for committor-based methods with substantially lower computational costs.
+
+  Here is my [resume](./files/cv.pdf).
+
+content:
+  - title: Talks and Conferences
+    layout: text
+    content: |
+      - Nov. 2024: **PEPR Diadem, NumPex and AI**, _When AI and HPC meet Material Sciences_ ([poster](./files/poster_2024.pdf)).
+      - Oct. 2024: **JED ED397**, _Physics and Chemistry of Materials doctoral school days_ ([slides](./files/slides_jed.pdf)).
+      - Jun. 2024: **CECAM**, _From methods to applications: challenges and opportunities in contemporary simulations_ ([poster](./files/poster_2024.pdf)).
+      - May. 2024: **IMPMC**, _PhD Student Days_ ([slides](./files/slides_jdd.pdf)).
+      - Jul. 2023: **CECAM**, _Enhanced Sampling Methods with PLUMED_ ([flash talk slides](./files/slides_cecam.pdf)).
+      - Apr. 2023: **GDR IAMAT**, _Thematic school on artificial intelligence_ ([poster](./files/poster_2023.pdf)).
+      - Jun. 2022: **CECAM**, _Chasing CVs using Machine Learning: from methods development to biphysical applications_ ([poster](./files/poster_2022.pdf)).
+
+  - title: Publications
+    layout: text
+    content: |
+      - 2023: Mouaffac, L.; Palacio-Rodriguez, K.; Pietrucci, F. **Optimal reaction coordinates and kinetic rates from the projected dynamics of transition paths**. _J. Chem. Theory Comput. 2023_,  DOI: [10.1021/acs.jctc.3c00158](https://doi.org/10.1021/acs.jctc.3c00158).
+
+  # - title: Preprints
+  # layout: text
+  # content: |
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+  - jekyll-seo-tag
